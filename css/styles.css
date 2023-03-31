@@ -350,12 +350,39 @@ html.is-open {
 
 /* ----------hero--------- */
 
-.hero {
-  background-image: linear-gradient(
+
+
+@media screen and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/mobile-img/Dark-bg.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/tablet-img/Dark-bg@1x.jpg);
+  }
+}
+
+@media screen and (max-width: 1158px) {
+  .hero {
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/desktop-img/people-office\ 1@1x.jpg);
+  }
+}
+
+.hero {
   background-size: cover;
   background-position: center;
   background-color: var(--background-hero-color);
@@ -364,9 +391,10 @@ html.is-open {
   padding: 188px 0;
   text-align: center;
 }
+
 @media screen and (max-width: 1199px) {
   .hero {
-    padding: 112px 0;
+    padding: 120px 0;
   }
 }
 
@@ -420,122 +448,167 @@ html.is-open {
   background: var(--filter-btn-background-hover-color);
 }
 
-/* @media screen and (max-width: 767px) {
-  .hero{
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
-    url(../images/mobile-img/Dark-bg.jpg);
-  } 
+/* ----------/hero--------- */
+
+/* ----------feature--------- */
+.feature {
+  padding: 120px 0;
+}
+
+@media screen and (max-width: 1199px) {
+  .feature {
+    padding: 96px 0;
+  }
+}
+
+.container {
+}
+.feature-container {
+}
+.feature-title {
+
+}
+
+
+.feature-list {
+  display: block;
+  padding: 0;
+  margin: 0;
+  
+}
+
+
+@media screen and (max-width: 480px) {
+  .feature-list {
+    width: 100%;
+   
+  }
+
   
 }
 
 @media screen and (min-width: 768px) {
-  .hero{
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
-    url(../images/tablet-img/Dark-bg@1x.jpg);
-  } 
-}
+  .feature-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
 
-@media screen and (min-width: 1158px) {
-  .hero {      
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
-    url(../images/desktop-img/people-office\ 1@1x.jpg);
+  }
+
+  .feature-item {
+    width:calc((100% - 48) / 2);
+    max-width: 356px;
   }
 }
 
-.hero {
-  background-size: cover;
-  background-color: var(--background-hero-color);
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 188px 0px; 
-}
 
 
-@media screen and (max-width: 427px){
-  .hero-container {
-    width: 100%;
+
+@media screen and (min-width: 1200px) {
+  .feature-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+   
+  }
+
+  .feature-item {
+    width:calc((100% - 72) / 4);
+    max-width: 264px;
   }
 }
-  
-.hero-container {
+
+
+
+@media screen and (min-width: 1200px) {
+  .feature-item {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.list {
+}
+
+.feature-icon {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-       
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  min-height: 112px;
+  width: 264px;
 }
 
-
-
-
-.hero-title {
-  max-width: 496px;
-  text-align: center;
-  margin-bottom: 48px;
-          
-  color: var(--hero-title-color);
-
-  font-size: 56px;
-  line-height: 1.07;
-  letter-spacing: 0.02em;  
+@media screen and (max-width: 1199px) {
+  .feature-icon {
+    display: none;
+  }
 }
 
-@media screen and (max-width:767px) {
-  .hero-title{
-    max-width: 480px;
+.icon {
+}
+.feature-subtitle {
+}
+
+@media screen and (max-width: 767px) {
+  .feature-subtitle {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .feature-subtitle {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
   }
 }
 
-.hero-btn {
-  display: inline-block;
-  
-  text-align: center;
-  border-radius: 4px;
-  padding: 16px 32px;
-  min-width: 169px;
-  
-  border: 1px solid var(--btn-mavy-color);
-  color: var(--btn-light-color);
-  background: var(--btn-mavy-color);
-
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  transition: background-color var(--transition-dur-func-btn-hover), border var(--transition-dur-func-btn-hover);
-   
+@media screen and (min-width: 1200px) {
+  .feature-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-top: 8px;
+  }
 }
 
-.hero-btn:hover,
-.hero-btn:focus {
-  border: 1px solid var(--filter-btn-background-hover-color);
-  background: var(--filter-btn-background-hover-color);
-} */
-/* ----------/hero--------- */
+.feature-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  margin-top: 8px;
+}
 
-/* ----------feature--------- */
+@media screen and (max-width: 1199px) {
+  .feature-text {
+    font-weight: 500;
+  }
+}
 
-
-
-
-
-  
-
-
-
-  
+@media screen and (max-width: 1199px) {
+  .feature-text {
+    font-weight: 40;
+  }
+} 
 
 /* ----------/feature--------- */
 
 /* ----------activities--------- */
+
 .active {
   padding-bottom: 120px;
 } 
+
+@media screen and (max-width: 1158px) {
+  .active {
+    display: none;
+  }
+}
 
 .acteive-container{
   display: flex;
@@ -573,7 +646,8 @@ html.is-open {
 
 /* ----------our team--------- */
 .team {
-  padding: 120px 0;
+  padding: 96px 0 96px 0;
+  /* padding: 120px 0; */
   background: var(--team-background-color);
 }
 
@@ -605,6 +679,37 @@ html.is-open {
   margin:0;
   padding: 0;
 }
+
+@media screen and (max-width: 767px) {
+  .team-list {
+    flex-direction: column;
+    width: 260px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 700px;
+    gap: 24px;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    column-gap: 24px;
+    margin: 0 auto;
+  }
+}
+
+
 .team-item {
   width: calc((100% - 72) / 4);
   text-align: center;
