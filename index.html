@@ -159,9 +159,40 @@
                 <div class="container acteive-container">
                     <h2 class="active-title">What are we doing</h2>
                     <ul class="active-list">
-                            <li class="active-item list"><img class="img" src="./images/desktop-img/img 1@1x-min.jpg" alt="a monitor" width="360" height="300"></li>
-                            <li class="active-item list"><img class="img" src="./images/desktop-img/img 2@1x-min.jpg" alt="a phone" width="360" height="300"></li>
-                            <li class="active-item list"><img class="img" src="./images/desktop-img/img 3@1x-min.jpg" alt="a laptop and a phone" width="360" height="300"></li>
+                            <li class="active-item list">
+                               <picture>
+                                    <source 
+                                    srcset="
+                                    ./images/desktop-img/img 1@1x-min.jpg 1x,
+                                    ./images/desktop-img/img 1@1x-min.jpg 2x"
+                                    media="(max-width: 1158px)"
+                                    />
+                               </picture>             
+                                <img class="img" src="./images/pic1.jpg" alt="a monitor" width="360" height="300">
+                            </li>
+
+                            <li class="active-item list">
+                                <picture>
+                                    <source 
+                                    srcset="
+                                    ./images/desktop-img/img 2@1x-min.jpg 1x,
+                                    ./images/desktop-img/img 2@1x-min.jpg 2x"
+                                    media="(max-width: 1158px)"
+                                    />
+                               </picture>   
+                                <img class="img" src="./images/pic2.jpg" alt="a phone" width="360" height="300">
+                            </li>
+                            <li class="active-item list">
+                                <picture>
+                                    <source 
+                                    srcset="
+                                    ./images/desktop-img/img 3@1x-min.jpg 1x,
+                                    ./images/desktop-img/img 3@1x-min.jpg 2x"
+                                    media="(max-width: 1158px)"
+                                    />
+                               </picture>   
+                                <img class="img" src="./images/pic3.jpg" alt="a laptop and a phone" width="360" height="300">
+                            </li>
                     </ul>
                 </div>
             
@@ -173,6 +204,28 @@
                     <h2 class="team-title">Our Team</h2>
                     <ul class="team-list">
                         <li class="team-item list">
+                            <picture>
+                                <source 
+                                srcset="
+                                ./images/desktop-img/img@1x-1.jpg 1x,
+                                ./images/desktop-img/img@2x-1.jpg 2x"
+                                media="(max-width: 1158px)"
+                                />
+
+                                <source 
+                                srcset="
+                                ./images/tablet-img/img@1x-1.jpg 1x,
+                                ./images/tablet-img/img@2x-1.jpg 2x"
+                                media="(max-width: 768px)"
+                                />
+
+                                <source 
+                                srcset="
+                                ./images/mobile-img/img@1x-1.jpg 1x,
+                                ./images/mobile-img/img@2x-1.jpg 2x"
+                                media="(min-width: 767px)"
+                                />
+                           </picture>   
                             <img class="img" src="./images/img1.jpg" alt="man with black beard" width="264" height="260">
                         <div class="team-text">
                                 <h3 class="team-subtitle">Mark Guerrero</h3>
@@ -210,8 +263,30 @@
                             </div>
                         </li>
                         <li class="team-item list">
+                            <picture>
+                                <source 
+                                srcset="
+                                ./images/desktop-img/img@1x-2.jpg 1x,
+                                ./images/desktop-img/img@2x-2.jpg 2x"
+                                media="(max-width: 1158px)"
+                                />
+
+                                <source 
+                                srcset="
+                                ./images/tablet-img/img@1x-2.jpg 1x,
+                                ./images/tablet-img/img@2x-2.jpg 2x"
+                                media="(max-width: 768px)"
+                                />
+
+                                <source 
+                                srcset="
+                                ./images/mobile-img/img@1x-2.jpg 1x,
+                                ./images/mobile-img/img@2x-2.jpg 2x"
+                                media="(min-width: 767px)"
+                                />
+                           </picture>   
                             <img class="img" src="./images/img2.jpg" alt="loughing man" width="264" height="260">
-                        <div class="team-text">
+                            <div class="team-text">
                                 <h3 class="team-subtitle">Tom Ford</h3>
                                 <p class="team-description">Frontend Developer</p>
                         <ul class="social-list list">
@@ -247,6 +322,28 @@
                         </div>
                         </li>
                         <li class="team-item list">
+                            <picture>
+                                <source 
+                                srcset="
+                                ./images/desktop-img/img@1x-3.jpg 1x,
+                                ./images/desktop-img/img@2x-3.jpg 2x"
+                                media="(max-width: 1158px)"
+                                />
+
+                                <source 
+                                srcset="
+                                ./images/tablet-img/img@1x-3.jpg 1x,
+                                ./images/tablet-img/img@2x-3.jpg 2x"
+                                media="(max-width: 768px)"
+                                />
+
+                                <source 
+                                srcset="
+                                ./images/mobile-img/img@1x-3.jpg 1x,
+                                ./images/mobile-img/img@2x-3.jpg 2x"
+                                media="(min-width: 767px)"
+                                />
+                            </picture>   
                             <img class="img" src="./images/img3.jpg" alt="woman with long hair" width="264" height="260">
                         <div class="team-text">
                                 <h3 class="team-subtitle">Camila Garcia</h3>
@@ -281,9 +378,31 @@
                                 </a>
                             </li>
                         </ul>
-                            </div>
+                        </div>
                         </li>
                         <li class="team-item list">
+                            <picture>
+                                <source 
+                                srcset="
+                                ./images/desktop-img/img@1x-4.jpg 1x,
+                                ./images/desktop-img/img@2x-4.jpg 2x"
+                                media="(max-width: 1158px)"
+                                />
+
+                                <source 
+                                srcset="
+                                ./images/tablet-img/img@1x-4.jpg 1x,
+                                ./images/tablet-img/img@2x-4.jpg 2x"
+                                media="(max-width: 768px)"
+                                />
+
+                                <source 
+                                srcset="
+                                ./images/mobile-img/img@1x-4.jpg 1x,
+                                ./images/mobile-img/img@2x-4.jpg 2x"
+                                media="(min-width: 767px)"
+                                />
+                           </picture>   
                             <img class="img" src="./images/img4.jpg" alt="smiling man with beard" width="264" height="260">
                             <div class="team-text">
                                 <h3 class="team-subtitle">Daniel Wilson</h3>
@@ -326,7 +445,7 @@
             <!--/Our team-->
 
             <!--Customers-->
-            <!-- <section class="customers">
+            <section class="customers">
                 <div class="container customers-container">
                     <h2 class="customer-title">Customers</h2>
                     <ul class="customers-list list">
@@ -374,7 +493,7 @@
                         </li>
                     </ul>
                 </div>
-            </section>  -->
+            </section> 
         </main>
         <!-- /main -->
         <!-- footer -->
