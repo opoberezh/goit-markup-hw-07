@@ -164,8 +164,6 @@ html.is-open {
 
 .header {
   position: relative;
-  padding-top: 24px;
-  /* padding-bottom: 24px; */
   border-bottom: 1px solid var(--filters-button-background);
 }
    
@@ -300,6 +298,14 @@ html.is-open {
 }
 
 @media screen and (max-width: 768px) {
+  .logo {
+    margin: 0;
+  }
+  
+  .header {
+    padding: 24px 0;
+  }
+  
   .header-list {
     display: none;
   
@@ -358,8 +364,7 @@ html.is-open {
   .hero {
     background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
+      rgba(46, 47, 66, 0.7)),
     url(../images/mobile-img/Dark-bg.jpg);
   }
 }
@@ -368,19 +373,48 @@ html.is-open {
   .hero {
     background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
+      rgba(46, 47, 66, 0.7)),
     url(../images/tablet-img/Dark-bg@1x.jpg);
   }
 }
 
-@media screen and (max-width: 1158px) {
+@media screen and (min-width: 1158px) {
   .hero {
     background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
+      rgba(46, 47, 66, 0.7)),
     url(../images/desktop-img/people-office\ 1@1x.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+screen and (min-resolution : 192dpi) and (max-width: 767px),
+screen and (min-resolution : 2dppx) and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+      url(../images/mobile-img/Dark-bg@2x.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution : 192dpi) and (min-width: 768px), 
+  screen and (min-resolution : 2dppx)  and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+     rgba(46, 47, 66, 0.7),
+     rgba(46, 47, 66, 0.7)),
+     url(../images/tablet-img/Dark-bg@2x.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1158px),
+screen and (min-resolution : 192dpi) and (min-width: 1158px),
+screen and (min-resolution : 2dppx) and (min-width: 1158px) {
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+      url(../images/tablet-img/Dark-bg@2x.jpg);
   }
 }
 
@@ -487,7 +521,7 @@ html.is-open {
 }
 
 .feature-title {
-
+  color: var(--main-title-subtitle-color);
 }
 
 
@@ -521,11 +555,11 @@ html.is-open {
     justify-content: center;
     flex-wrap: wrap;
     gap: 24px;
+    row-gap: 72px;
 
   }
 
   .feature-item {
-    width:calc((100% - 48) / 2);
     max-width: 356px;
   }
 }
@@ -579,6 +613,7 @@ html.is-open {
 .icon {
 }
 .feature-subtitle {
+  color: var(--main-title-subtitle-color);
 }
 
 @media screen and (max-width: 767px) {
@@ -713,6 +748,8 @@ html.is-open {
     flex-direction: column;
     width: 260px;
     margin: 0 auto;
+    gap: 72px;
+    
   }
 }
 
@@ -721,8 +758,9 @@ html.is-open {
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0 auto;
-    width: 700px;
-    gap: 24px;
+    width: 582px;
+    row-gap: 72px;
+   /* column-gap: 24px; */
     justify-content: center;
   }
 }
@@ -732,7 +770,7 @@ html.is-open {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
-    column-gap: 24px;
+    gap: 24px;
     margin: 0 auto;
   }
 }
@@ -817,7 +855,7 @@ html.is-open {
 .customers-container {
   display: flex;
   flex-direction: column;
-  padding: 130px 0 120px 0;
+  /* padding: 130px 0 120px 0; */
    
 } 
 
@@ -845,19 +883,24 @@ html.is-open {
   .customers-list {
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
     flex-wrap: wrap;
     margin-top: 72px;
+    gap: 72px;
+    width: 582px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .customers-list {
-    flex-wrap: wrap;
-    width: 700px;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-    margin-top: 72px;
+      flex-wrap: wrap;
+      width: 582px;
+      margin: 0 auto;
+      justify-content: center;
+      align-items: center;
+      margin-top: 72px;
+      row-gap: 72px;
+    
   }
 }
 
@@ -914,7 +957,7 @@ html.is-open {
 
 @media screen and (min-width: 767px) and (max-width: 1199px) {
   .footer-container {
-    max-width: 566px;
+    max-width: 582px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -1401,9 +1444,9 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
   position: absolute;
   /* width: 408px; */
   left: 50%;
-  top: 70%;
+  top: 96px;
   padding: 72px 24px 24px 24px;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%);
 
   background: var(--modal-bg-color) ;
   box-shadow: var(--modal-box-shadow);
