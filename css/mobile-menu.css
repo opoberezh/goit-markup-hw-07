@@ -80,7 +80,7 @@
 .mobile-menu-link {
     color: #2e2f42; 
     font-family: 'Roboto';
-    font-style: normal;
+    
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -102,6 +102,10 @@
     flex-direction: column;
     gap: 40px;px;
     
+}
+
+.address {
+    font-style: normal;
 }
 
 

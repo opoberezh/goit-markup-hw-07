@@ -215,18 +215,6 @@ html.is-open {
   color: var(--hover-link-color);
 }
 
-/* .current::after {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 4px;
-  left: 0px;
-  bottom: -1px;
-  background: var(--hover-link-color);
-  border-radius: 2px;
-} */
-
 .header-link.current::after {
   position: absolute;
   bottom: -1px;
@@ -360,7 +348,7 @@ html.is-open {
 
 
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 428) {
   .hero {
     background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -369,7 +357,7 @@ html.is-open {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 429px) and (max-width: 768px) {
   .hero {
     background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -378,7 +366,7 @@ html.is-open {
   }
 }
 
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 769px) {
   .hero {
     background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -387,9 +375,9 @@ html.is-open {
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-screen and (min-resolution : 192dpi) and (max-width: 767px),
-screen and (min-resolution : 2dppx) and (max-width: 767px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 428px),
+screen and (min-resolution : 192dpi) and (min-width: 320px) and (max-width: 428px),
+screen and (min-resolution : 2dppx) and (min-width: 320px) and (max-width: 428px) {
   .hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
@@ -397,9 +385,9 @@ screen and (min-resolution : 2dppx) and (max-width: 767px) {
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-  screen and (min-resolution : 192dpi) and (min-width: 768px), 
-  screen and (min-resolution : 2dppx)  and (min-width: 768px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 429px) and (max-width: 768px),
+  screen and (min-resolution : 192dpi) and (min-width: 429px) and (max-width: 768px), 
+  screen and (min-resolution : 2dppx)  and (min-width: 429px) and (max-width: 768px) {
   .hero {
     background-image: linear-gradient(
      rgba(46, 47, 66, 0.7),
@@ -408,9 +396,9 @@ screen and (min-resolution : 2dppx) and (max-width: 767px) {
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 1158px),
-screen and (min-resolution : 192dpi) and (min-width: 1158px),
-screen and (min-resolution : 2dppx) and (min-width: 1158px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 769px),
+screen and (min-resolution : 192dpi) and (min-width: 769px),
+screen and (min-resolution : 2dppx) and (min-width: 769px) {
   .hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
@@ -887,7 +875,7 @@ screen and (min-resolution : 2dppx) and (min-width: 1158px) {
     flex-wrap: wrap;
     margin-top: 72px;
     gap: 72px;
-    width: 582px;
+    
   }
 }
 
